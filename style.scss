@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #181719;
+}
+
+.navbar {
+    display: flex;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 4rem;
+
+    #hamburger {
+        display: none;
+        z-index: 20;
+    }
+
+    #cancel {
+        display: none;
+        z-index: 20;
+    }
+
+    .logo {
+        flex: 1.5;
+
+        h1 {
+            font-family: Crimson Pro;
+            font-style: normal;
+            font-weight: 200;
+            font-size: 14px;
+            line-height: 16px;
+            /* identical to box height */
+
+            text-transform: uppercase;
+
+            color: #ffffff;
+
+            border: solid 1px white;
+            display: inline-block;
+            padding: 0.5rem;
+        }
+    }
+
+    .sections {
+        flex: 1;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            li {
+                list-style: none;
+                padding: 0.5rem;
+                :hover,
+                :focus {
+                    font-weight: 700;
+                    border-bottom: 2px solid white;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    /* identical to box height */
+
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+
+    .text {
+        flex: 1;
+        padding: 8rem 4rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+
+        h1 {
+            font-family: Lora;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 61px;
+
+            color: #ffffff;
+        }
+
+        p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+
+            color: #ffffff;
+        }
+
+        h2 {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+
+            color: #ffffff;
+        }
+    }
+
+    .showcase {
+        flex: 1.5;
+        position: relative;
+        z-index: -1;
+
+        .image img {
+            width: 50vw;
+            height: 70vh;
+        }
+
+        .tweet {
+            position: absolute;
+            bottom: -50px;
+            background: #181719;
+            padding: 1rem;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            right: 15vw;
+            width: 30vw;
+
+            h1 {
+                font-family: Lora;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 31px;
+
+                color: #ffffff;
+            }
+
+            .profile {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 1rem;
+
+                .photo {
+                    img {
+                        width: 3rem;
+                        height: 3rem;
+                        border-radius: 50%;
+                        margin-right: 1rem;
+                    }
+                }
+
+                .designation {
+                    flex: 1;
+                    h1 {
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        /* identical to box height */
+
+                        color: #ffffff;
+                    }
+
+                    p {
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 15px;
+                        /* identical to box height */
+
+                        /* Gray 3 */
+
+                        color: #828282;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .content {
+        .showcase {
+            .image {
+                img {
+                    height: 40vh;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        .showcase {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            .image {
+                img {
+                    height: 40vh;
+                    width: 90vw;
+                }
+            }
+
+            .tweet {
+                width: 60vw;
+                right: 10vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar {
+        padding: 0 1rem;
+        height: 10vh;
+
+        #hamburger{
+            display: inline-block;
+        }
+        .sections {
+            position: fixed;
+            top: 50%;
+            transform: translate(0%, -50%);
+
+            ul {
+                padding: 10rem 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                height: 100vh;
+                width: 100vw;
+                background: #181719;
+                z-index: 10;
+                clip-path: circle(0% at 100% 0%);
+                transition: 1.5s all;
+            }
+        }
+    }
+
+    .content {
+        .text {
+            padding: 1rem 1rem;
+
+            h1 {
+                font-size: 36px;
+                line-height: 46px;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 1.5rem;
+            }
+
+            h2 {
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .showcase {
+            .tweet {
+                width: 75vw;
+
+                .profile {
+                    .designation {
+                        h1 {
+                            font-size: 12px;
+                            line-height: 15px;
+                        }
+
+                        p {
+                            font-size: 10px;
+                            line-height: 12px;
+                        }
+                    }
+                }
+                h1 {
+                    font-size: 18px;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+}
