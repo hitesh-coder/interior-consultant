@@ -231,6 +231,22 @@ body {
   color: #828282;
 }
 
+footer {
+  height: 5vh;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #BDBDBD;
+}
+
+footer a {
+  font-weight: 700;
+  color: #a1a1a1;
+}
+
 @media screen and (max-width: 1200px) {
   .content .showcase .image img {
     height: 40vh;
