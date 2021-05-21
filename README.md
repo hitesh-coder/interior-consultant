@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://hitesh-coder.github.io/interior-consultant/">
+    <a href="https://hitesh-coder.github.io/recipe-page/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/hitesh-coder/interior-consultant">
+    <a href="https://github.com/hitesh-coder/interior-consultant/">
       Solution
     </a>
     <span> | </span>
@@ -35,21 +35,21 @@
 
 ## Overview
 
-<img width="1440" alt="Screenshot 2021-05-20 at 10 35 00 PM" src="https://user-images.githubusercontent.com/58116679/119021302-e8767680-b9bc-11eb-9d53-91a4479be484.png">
+<img width="1438" alt="Screenshot 2021-05-21 at 9 00 11 PM" src="https://user-images.githubusercontent.com/58116679/119162179-b83fde00-ba77-11eb-8916-6a4a94f06988.png">
 
-<img width="386" alt="Screenshot 2021-05-20 at 10 43 52 PM" src="https://user-images.githubusercontent.com/58116679/119021311-ead8d080-b9bc-11eb-91be-4472f59101f0.png">
+<img width="338" alt="Screenshot 2021-05-21 at 9 00 31 PM" src="https://user-images.githubusercontent.com/58116679/119162210-bf66ec00-ba77-11eb-81fc-a59498897d31.png">
 
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo?
-> https://hitesh-coder.github.io/interior-consultant/
+> https://hitesh-coder.github.io/recipe-page/
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- HTML, CSS and JS
+- HTML & CSS.
 
 ## Features
 
@@ -59,5 +59,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- [Website] (https://hitesh-coder.github.io/interior-consultant/)
+- [Website] (https://hitesh-coder.github.io/recipe-page/)
 - GitHub [HITESH](https://github.com/hitesh-coder)
